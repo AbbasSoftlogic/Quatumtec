@@ -2,8 +2,8 @@ name: Backend CI/CD
 
 on:
   push:
-    paths:
-      - backend/**
+    #paths:
+      #- backend/**
     branches:
       - main
 
