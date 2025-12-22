@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebApp Frontend</title>
+</head>
+<body>
+  <h1>Frontend is working 🚀 </h1>
+  <button onclick="callBackend()">Call Backend</button>
+
+  <script>
+    function callBackend() {
+      fetch('/api/health')
+        .then(res => res.text())
+        .then(data => alert(data))
+        .catch(err => alert(err));
+    }
+  </script>
+</body>
+</html>
